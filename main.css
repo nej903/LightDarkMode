@@ -113,15 +113,16 @@ a {
 }
 
 input:checked + .slider {
-  background-color: #7f00ff;
+  background-color: whitesmoke;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #7f00ff;
+  box-shadow: 0 0 1px black;
 }
 
 input:checked + .slider:before {
   transform: translateX(26px);
+  background: black;
 }
 
 /* Rounded sliders */
@@ -131,4 +132,8 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.slider.round.dark {
+  background: black;
 }
